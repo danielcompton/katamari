@@ -118,3 +118,13 @@ Usage:
           (resp/status 400)))
 
     (handler config stack request)))
+
+(defhandler what-changed
+  "Attempt to enumerate changed targets since some git ref.
+
+Usage:
+  ./kat what-changed <ref-expr>"
+  [handler config stack request]
+  (case (first request)
+    "what-changed"
+    (if-let [ref (se)])))
