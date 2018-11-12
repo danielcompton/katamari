@@ -29,6 +29,7 @@
 
     instaparse/instaparse nil
     clj-fuzzy nil
+    me.arrdem/cuddlefish nil
 
     ;; Embedded development
     nrepl/nrepl nil
